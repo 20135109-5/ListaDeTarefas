@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <CheckBox
+        android:id="@+id/checkBoxTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textViewTask"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="16dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_gravity="center_vertical"
+        android:text="Nome da Tarefa"/>
+
+    <TextView
+        android:id="@+id/textViewRecurring"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:backgroundTint="#7CB342"
+        android:drawableTop="@android:drawable/ic_menu_set_as"
+        android:drawablePadding="4dp"
+        android:drawingCacheQuality="low"
+        android:visibility="gone"
+        app:drawableTint="#7CB342" />
+
+    <Button
+        android:id="@+id/buttonRecurringTask"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#D1DFBB"
+        android:drawableTop="@android:drawable/ic_menu_rotate"
+        android:onClick="onEditButtonClick" />
+
+    <Button
+        android:id="@+id/buttonSetReminder"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_gravity="end"
+        android:backgroundTint="#D1DFBB"
+        android:drawableTop="@android:drawable/ic_menu_recent_history" />
+
+    <Button
+        android:id="@+id/buttonDeleteTask"
+        android:layout_width="30dp"
+        android:layout_height="50dp"
+        android:layout_gravity="end"
+        android:backgroundTint="#D1DFBB"
+        android:drawableTop="@android:drawable/ic_menu_delete"
+        android:onClick="onDeleteButtonClick" />
+</LinearLayout>
